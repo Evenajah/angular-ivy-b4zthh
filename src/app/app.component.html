@@ -1,0 +1,11 @@
+<ng-container *ngFor="let item of form.form">
+  <input
+    style="margin: 5px 0"
+    type="{{ item.type }}"
+    value="{{ item.value }}"
+    placeholder="{{ item.id }}"
+    id="{{ item.id }}"
+  />
+  <label style="margin-left:5px;" for="{{ item.id }}">{{ item.value }}</label>
+  <br />
+</ng-container>
